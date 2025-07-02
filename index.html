@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DOM Traversal</title>
+</head>
+<body>
+  <div id="container">
+    <p>First Paragraph</p>
+    <p id="target">Second Paragraph</p>
+    <p>Third Paragraph</p>
+  </div>
+
+  <script>
+    const target = document.getElementById('target');
+    console.log("Parent Node:", target.parentNode);
+    console.log("Child Nodes:", target.parentNode.childNodes);
+    console.log("Next Sibling:", target.nextSibling);
+  </script>
+</body>
+</html>
